@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    width: 100%;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  th::before, td::before {
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  button, input[type="submit"] {
+    width: 100%;
+  }
+
+  .quotation-container {
+    flex-direction: column;
+  }
+
+  .main-image {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  .quotation-table,
+  .quotation-table thead,
+  .quotation-table tbody,
+  .quotation-table th,
+  .quotation-table td,
+  .quotation-table tr {
+    display: block;
+  }
+
+  .quotation-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .quotation-table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .quotation-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .quotation-table td:before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .quotation-table td:nth-of-type(1):before { content: "Drug:"; }
+  .quotation-table td:nth-of-type(2):before { content: "Quantity:"; }
+  .quotation-table td:nth-of-type(3):before { content: "Amount:"; }
+  .quotation-table td:nth-of-type(4):before { content: "Action:"; }
+}
