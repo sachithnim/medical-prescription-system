@@ -1,0 +1,24 @@
+@import url('base/_reset.css');
+@import url('base/_typography.css');
+
+@import url('layout/_container.css');
+@import url('layout/_responsive.css');
+
+@import url('components/_alerts.css');
+@import url('components/_buttons.css');
+@import url('components/_forms.css');
+@import url('components/_images.css');
+@import url('components/_links.css');
+@import url('components/_tables.css');
+@import url('components/loader.css');
+
+@import url('pages/_quotation.css');
+@import url("pages/_dashboard.css");
+@import url('pages/_landing.css');
+@import url('pages/_auth.css');
+@import url("pages/_view_prescriptions.css");
+@import url('pages/_pagination.css');
+
+
+
+
