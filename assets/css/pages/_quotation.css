@@ -1,0 +1,170 @@
+.quotation-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.prescription-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.quotation-section {
+  flex: 1;
+  min-width: 400px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+  border-color: #007bff;
+}
+
+/* Quotation Box Layout (no table) */
+.quotation-box {
+  border-radius: 4px;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.quotation-header,
+.quotation-item,
+.quotation-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.quotation-header {
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.quotation-header span,
+.quotation-item span {
+  width: 33%;
+  display: inline-block;
+}
+
+.quotation-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quotation-item:last-child {
+  border-bottom: none;
+}
+
+.quotation-item button.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 36px;
+  text-align: center;
+  margin-left: auto;
+}
+
+.quotation-item button.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.quotation-total {
+  margin-top: 20px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.quotation-total span:first-child {
+  margin-right: 10px;
+}
+
+/* Form Layout (right aligned drug entry) */
+.add-drug-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-row label {
+  min-width: 80px;
+  font-weight: bold;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px;
+}
+
+.send-btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .quotation-container {
+    flex-direction: column;
+  }
+
+  .main-image {
+    height: auto;
+  }
+
+  .thumbnail-container {
+    justify-content: center;
+  }
+}

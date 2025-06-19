@@ -1,0 +1,120 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fe;
+}
+
+/* Hero wrapper */
+.landing-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links .nav-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Hero section */
+.hero-header {
+  background: linear-gradient(to bottom right, #c6e2ff, #f9fafe);
+  border-bottom-left-radius: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content layout */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 40px 60px;
+}
+
+/* Left side */
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #007bff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #007bff;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Right side */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+}

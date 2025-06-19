@@ -1,0 +1,23 @@
+/* assets/css/pages/_view_prescriptions.css */
+
+.thumbnail-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.thumbnail-preview img {
+  height: 50px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail-preview img:hover {
+  transform: scale(1.1);
+}
+
+
