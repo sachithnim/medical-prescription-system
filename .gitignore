@@ -1,0 +1,75 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# XAMPP or local server specific
+*.log
+*.pid
+*.bak
+*.tmp
+
+# Composer dependencies (if used)
+vendor/
+
+# Node dependencies (if any frontend tools used)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.backup
+.env.*
+
+# Cache and sessions
+cache/
+tmp/
+storage/
+sessions/
+
+# Uploads and user-generated content
+/public/uploads/
+/uploads/
+/assets/uploads/
+/assets/images/uploads/
+/*.pdf
+*.zip
+
+# Database dump (optional, depending on your workflow)
+*.sql
+*.sql.gz
+
+# PHPStorm
+*.iml
+
+# Backup files
+*.bak
+*.old
+*.swp
+*.swo
+
+# Password reset or mail token artifacts (if created manually)
+reset_tokens.json
+
+# PHPUnit
+phpunit.xml
+phpunit.result.cache
+coverage/
+
+# Laravel specific (if you use Laravel at some point)
+bootstrap/cache/
+storage/*.key
+storage/logs/
+storage/framework/
+
+# Log files
+*.log
+
+# File upload test directories
+test_uploads/
+test_output/
