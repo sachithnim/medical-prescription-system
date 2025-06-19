@@ -1,0 +1,7 @@
+.prescription-images img,
+img.prescription {
+  width: 120px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #dee2e6;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: #e9ecef;
+}
+
+table,
+.dashboard-table {
+  width: 100%;
+  table-layout: fixed; 
+}
+
